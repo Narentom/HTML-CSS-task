@@ -1,0 +1,136 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form </title>
+</head>
+<body  background="https://cdn.wallpapersafari.com/68/66/PLgQbl.jpg">
+    <form action="task2.html">
+    <h1 style="background-color: black;color: white;text-align: center;display: inline;margin-left: 40%;">STUDENT FORM</h1> 
+     <fieldset  style="width: 40%; margin-left: 30%;"> 
+        <legend><b>Registration</b></legend>
+        <fieldset>
+        <legend>Personal</legend>
+        <table>
+            <tr>
+                <th>First name:</th>
+                <td><input type="text" required autofocus></td>
+            </tr>
+            <tr>
+                <th>Last name:</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Father:</th>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <th>Mother:</th>
+                <td><input type="text" required></td>
+            </tr>
+        </table>
+    <p>Choose  Your Gender</p>
+    <input type="radio" name="gender" id="male"><label for="male">male<label>
+    <input type="radio" name="gender"id="female"><label for="female">female<label>
+    <input type="radio" name="gender" id="other"><label for="other">other</label><br><br>
+    <label  for="datepicker">DOB:</label> 
+    <input type="datetime-local" required> 
+    
+     </fieldset> 
+    
+    
+        <legend><b>Contact</b></legend>
+        <table>
+            <tr>
+                <th>Mobile:</th>
+                <td><input type="number" required autofocus></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><textarea name="" id="" cols="21" rows="5" style="resize: none;"></textarea></td>
+            </tr>
+            <tr>
+                <th>Pincode:</th>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <th>Country:</th>
+                <td><select name="" id="">
+                    <option value=""hidden>Choose here</option>
+                    <option value="">India</option>
+                    <option value="">Amercia</option>
+                    <option value="">Russia</option>
+                    <option value="">China</option>
+                    <option value="">Germany</option>
+                    <option value="">others</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>State:</th>
+                <td><select name="" id="">
+                    <option value=""hidden>Choose here</option>
+                    <option value="">Karnataka</option>
+                    <option value="">kerala</option>
+                    <option value="">Tamilnadu</option>
+
+                </select></td>
+            </tr>
+            <tr>
+                <th>District:</th>
+                <td><select name="" id="">
+                    <option value=""hidden>Choose here</option>
+                    <option value="">Maandiya</option>
+                    <option value="">Electronic city</option>
+                    <option value="">Majestic</option>
+
+                </select></td>
+            </tr>
+        </table>
+        <legend><b>Placements</b></legend>
+        <P><b>Designation:</b></P>
+        <input type="radio" name="Designation" id="Developer"><label for="">Developer</label>
+        <input type="radio" name="Designation" id="Test Engineer"><label for="">Test Engineer</label>
+        <input type="radio" name="Designation" id="Support"><label for="">Support</label>
+        <p><b>Place of preference:</b></p>
+        <input type="checkbox"><label for="">Banglore</label>
+        <input type="checkbox"><label for="">Chennai</label>
+        <input type="checkbox"><label for="">Hydrabad</label>
+        <input type="checkbox"><label for="">Pune</label>
+        <input type="checkbox"><label for="">Delhi</label>
+        <input type="checkbox"><label for="">Noida</label>
+        <input type="checkbox"><label for="">Pan india</label>
+        <p><b>Excepted package:</b></p>
+        <input type="radio"><label for=""> <3LPA</label>
+        <input type="radio"><label for=""> 3-6LPA</label>
+        <input type="radio"><label for=""> 6-10LPA</label>
+        <input type="radio"><label for=""> more than 15LPA</label>
+        <input type="radio"><label for=""> No Expectation</label>
+        <label for="">Upload Resume:</label><input type="file" required name="" id="file">
+        
+            <legend><b>Accounts</b></legend>
+            <table>
+                <tr>
+                    <th>Set Username:</th>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <th>Set Password:</th>
+                    <td><input type="password" required></td>
+                
+                </tr>
+            </table> 
+        <table>
+        <tr>
+            <th><input type="checkbox" required><label for="">Agree Terms & Condition</label></th>
+            <td><button>Submit</button></td>
+            <td><button>Cancel</button></td>
+        </tr>
+    </fieldset>
+</form>
+</body>
+</html>

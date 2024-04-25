@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            height: 180px;
+            width: 220px;
+            display: inline-block;
+            border: 1px black solid;
+           border-top-left-radius: 100%;
+           background: linear-gradient(217deg, rgba(255, 0, 0, 0.57), rgba(255,0,0,0) 100%);
+           box-shadow: 1px 1px 14px 1px black inset ;
+                   
+           
+        }
+        .two{
+            height: 180px;
+            width: 220px;
+            border: 1px black solid;
+            display: inline-block;
+            border-top-right-radius: 100%;
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 100%);
+            box-shadow: 1px 1px 14px 1px black inset ;
+        }
+        .three{
+            height: 180px;
+            width: 220px;
+            border: 1px black solid;
+            border-bottom-left-radius: 100%;
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 100%);
+            box-shadow: 1px 1px 14px 1px black inset ;
+            
+        }
+        .four{
+            height: 180px;
+            width: 220px;
+            border: 1px black solid;
+            position: absolute;
+            left: 250px;
+            top: 210px;
+            border-bottom-right-radius: 100%;
+            box-shadow: 16px 16px 32px  black ;
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 100%);
+        }
+        .five{
+            height: 30px;
+            width: 50px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 160px;
+            outline: 1px black solid;
+            outline-offset: 5px;
+            background: radial-gradient(white,purple);
+            outline-color: purple;
+            top: 50px;
+        }
+        .six{
+            height: 25px;
+            width: 40px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: -100px;
+            outline: 1px black solid;
+            outline-offset: 5px;
+            background: radial-gradient(white,purple);
+            outline-color: purple;
+            top: 90px;
+        }
+        .seven{
+            height: 20px;
+            width: 30px;
+            border: 1px black solid;
+            position: absolute;
+            border-radius: 5px;
+            left: 70px;
+            color: white;
+            box-shadow: 2px 2px 1px black;
+            top: -10px;
+        }
+        .eight{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: -50px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+        }
+        .nine{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: -50px;
+            left: 60px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+        }
+        .ten{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 100px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+        }
+        .one-1{
+            height: 6px;
+            width: 6px;
+            border-radius: 60%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 100px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 50px;
+        }
+        .one-2{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 20px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 50px;
+        }
+        .one-3{
+            height: 30px;
+            width: 30px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: -20px;
+            outline: 1px black solid;
+            outline-offset: 2px;
+            background-color: red;
+            outline-color: red;
+            top: 80px; 
+        }
+        .one-4{
+            height: 15px;
+            width: 30px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 40px;
+            outline: 1px black solid;
+            outline-offset: 5px;
+            background: radial-gradient(white,purple);
+            outline-color: purple;
+            top: 80px;  
+        }
+        .one-5{
+            height: 30px;
+            width: 30px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: -20px;
+            outline: 1px black solid;
+            outline-offset: 2px;
+            background-color: red;
+            outline-color: red;
+            top: 160px;  
+        }
+        .one-6{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 220px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 50px;
+        }
+        .one-7{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 180px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 50px;
+        }
+        .one-8{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 80px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: -40px;
+        }
+        .one-9{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 120px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: -40px;
+        }
+        .one-10{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 140px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 40px;
+        }
+        
+        .one-11{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 140px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 220px;
+        }
+        .one-12{
+            height: 30px;
+            width: 30px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 200px;
+            outline: 1px black solid;
+            outline-offset: 2px;
+            background-color: red;
+            outline-color: red;
+            top: 160px;  
+        }
+        .one-13{
+            height: 24px;
+            width: 48px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 260px;
+            outline: 1px black solid;
+            outline-offset: 5px;
+            background: radial-gradient(white,purple);
+            outline-color: purple;
+            top: 120px;  
+        }
+        .one-14{
+            height: 20px;
+            width: 30px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 180px;
+            outline: 1px black solid;
+            outline-offset: 5px;
+            background: radial-gradient(white,purple);
+            outline-color: purple;
+            top: 220px;  
+        }
+        .one-15{
+            height: 20px;
+            width: 30px;
+            border: 1px black solid;
+            position: absolute;
+            border-radius: 5px;
+            left: 240px;
+            color: white;
+            box-shadow: 2px 2px 1px black;
+            top: 200px;
+        }
+        .one-16{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 180px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 280px;
+        }
+        .one-17{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 100px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 180px;
+        }
+        .one-18{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 140px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 180px;
+        }
+        .one-19{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 40px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 180px;
+        }
+        .one-20{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: -20px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 140px;
+        }
+        .one-21{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: -60px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 140px;
+        }
+        .one-22{
+            height: 20px;
+            width: 30px;
+            border: 1px black solid;
+            position: absolute;
+            border-radius: 5px;
+            left: 180px;
+            color: white;
+            box-shadow: 2px 2px 1px black;
+            top: -80px;
+        }
+        .one-23{
+            height: 20px;
+            width: 30px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 180px;
+            outline: 1px black solid;
+            outline-offset: 5px;
+            background: radial-gradient(white,purple);
+            outline-color: purple;
+            top: -40px;  
+        }
+        .one-24{
+            height: 28px;
+            width: 40px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 220px;
+            outline: 1px black solid;
+            outline-offset: 5px;
+            background: radial-gradient(white,purple);
+            outline-color: purple;
+            top: 20px;  
+        }
+        .one-25{
+            height: 30px;
+            width: 30px;
+            border: 1px black solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 240px;
+            outline: 1px black solid;
+            outline-offset: 2px;
+            background-color: red;
+            outline-color: red;
+            top: -40px;  
+        }
+        .one-26{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: -60px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 240px;
+        }
+        .one-27{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 20px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 280px;
+        }
+        .one-28{
+            height: 6px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: rgb(52, 39, 39);
+            border: 1px black solid;
+            position: absolute;
+            top: 20px;
+            outline: 1px black solid;
+            outline-color: rgb(56, 38, 38);
+            outline-offset: 3px;
+            left: 280px;
+        }
+        body{
+            background-image: url('https://t3.ftcdn.net/jpg/05/60/42/26/360_F_560422609_3nv30UESgwV4988d3rnk9yMJaGXw5x4T.jpg');
+            backface-visibility: visible;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: -280px;
+            display: inline-block;
+            /* color: transparent; */
+            box-shadow: 10px 1px 10px rgba(171, 143, 143, 0.357);
+            
+        }
+        .main{
+            width: 500px;
+            height: 460px;
+            border: 1px black solid;
+            background-color: rgba(253, 255, 205, 0.651);
+            border-radius: 15%;
+            box-shadow: 10px 10px 20px ;
+        }
+        h1{
+            position: absolute;
+            top: 380px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1> <img src="data:image/png;base64,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" alt="No image  found" style="width: 50px; height: 35px; margin-left: 34px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">  Domino's</h1>
+    <div class="one"><div class="five"><diV class="six"><div class="seven"><div class="eight"><div class="nine"><div class="ten"></div></div></diV></div></div></div></div>
+    <div class="two"><div class="one-1"><div class="one-2"><div class="one-3"></div><div class="one-4"><div class="add1"></div></div><div></div>
+    <div class="one-5"></div>
+    <div class="one-6"></div>
+    <div class="one-7"></div>
+    <div class="one-9"></div>
+    <div class="one-10"></div>
+    <div class="one-11"></div>
+    <div class="one-8"></div>
+     <div class="one-12"></div>
+     <div class="one-13"></div>
+     <div class="one-14"></div>
+     <div class="one-15"></div>
+     <div class="one-16"></div>
+     <div class="one-17"></div>
+     <div class="one-18"></div>
+     <div class="one-19"></div>
+     <div class="one-20"></div>
+     <div class="one-21"></div>
+     <div class="one-22"></div>
+     <div class="one-23"></div><div></div>
+     <div class="one-24"></div>
+     <div class="one-25"></div>
+     <div class="one-26"></div>
+     <div class="one-27"><div class="one-28"></div></div></div></div></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</div>
+<img src="cokeimg" style="width: 250px; height: 450px; position: absolute; left: 510px; top: 10px;box-shadow: 2px 2px 10px rgba(238, 232, 232, 0.446),-50px -50px 10px rgba(222, 184, 135, 0.445) inset ; border-radius: 30%;color: transparent;">
+</body>
+</html>
